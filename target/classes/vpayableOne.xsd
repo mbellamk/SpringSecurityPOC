@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="Vpayable">
+
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="organizationId" type="xs:double" />
+				<xs:element name="payableId" type="xs:double" />
+				<xs:element name="amount" type="xs:double" />
+				<xs:element name="deliveryMethod" type="stringVMaxSize5" />
+				<xs:element name="numberOfAuthorizationsAllowed" type="xs:int" />
+				<xs:element name="amountOfAuthorizationsAllowed" type="xs:double" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:simpleType name="stringVMaxSize5">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="5" />
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

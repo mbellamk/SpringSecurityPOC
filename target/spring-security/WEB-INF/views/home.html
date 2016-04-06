@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="home">
+<head>
+
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script src="js/wex.js"></script>
+<script>
+        .ng-invalid.ng-dirty {
+            border-color: #FA787E;
+        }
+            .ng-valid.ng-dirty {
+                
+            border-color: #78FA89;
+
+            }
+        </script>
+<style>
+.gridStyle {
+	border: 1px solid rgb(212, 212, 212);
+	width: 400px;
+	height: 300px
+}
+</style>
+</head>
+Hello How Are you
+<body class="container">
+	<div class="row">
+		<div class="col-md-12 col-offset-md-12"
+			ng-controller="VPayableController">
+			<div class="gridStyle" ng-grid="gridOptions"></div>
+			>
+		</div>
+	</div>
+</body>
+</html>
